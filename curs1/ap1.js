@@ -1,0 +1,6 @@
+alert('salut javascript')
+window.alert('salut')
+confirm('vreau sa invat javascript')
+console.log('mesaj in consola')
+console.info('ínfo status')
+console.error('mesaj de eroare')
