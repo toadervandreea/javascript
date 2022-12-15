@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car = {
+            "marca": "dacia",
+            "model": "logan",
+            "an": 2000,
+            "cunoare":"alb",
+            "decapotabila": false,
+            "km": 180000,
+            "nrPasageri":5
+        }
+        car.tipmotor = "GPL";
+       
+        car.cunoare = "galben";
+       
+
+        const myCar = car;
+        
+        myCar.marca = "bmw";
+
+        car.model = "x5";
+        
+        console.log(car);
+        console.log(myCar);
+       
+    </script>
+</body>
+</html>
