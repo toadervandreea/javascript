@@ -5,19 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       
+        .container{
+            margin: 30px;
+            padding: 40px;
+            /* justify-content: center;  */
+            float: right;
+            width: 100%;
+            max-width: 1200px;
+        }
+       
+    </style>
 </head>
 <body>
-    <script>
-var myArr = ['a', 'b', 'c'];
-var newArr = {
-0: 'a',
-1: 'b',
-2: 'c'
-};
-console.log( typeof myArr);
-console.log( myArr);
-console.log( typeof newArr);
-console.log(newArr);
-    </script>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            <h1>Formular contact</h1>
+            <label for="oras">Orasul</label>
+                <select name="oras" id="oras">
+                    <option value="">Selecteaza</option>
+                    <option value="Bucuresti">Bucuresti</option>
+                    <option value="Iasi">Iasi</option>
+                    <option value="Galati">Galati</option>
+                    <option value="Brasov">Brasov</option>
+                    <option value="Constanta">Constanta</option>
+                </select> <br>
+            <label for="curs">Cursuri la care doriti sa va inscrieti</label>
+                <select name="curs[]" id="curs" multiple>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="Photoshop">Photoshop</option>
+                </select> <br>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="" cols="30" rows="10"></textarea> <br>
+            <label for="CV">CV</label>
+            <input type="file" name="cv" id="cv">
+            <fieldset>
+                <figcaption>Program cursuri</figcaption>
+                
+                <input type="radio" name="dimineata" id="dimineata" value="dimineata" checked>dimineata
+               
+                <input type="radio" name="pranz" id="pranz" value="pranz">la pranz
+               
+                <input type="radio" name="seara" id="seara" value="seara">seara
+            </fieldset> <br>
+            <input type="checkbox" name="termeni" id="termeni" checked>Termeni si conditii
+            <input type="checkbox" name="newsletter" id="newsletter">Va abonati la newsletter <br>
+            <input type="submit" value="Trimite datele">
+            
+        </form>
+    </div>
 </body>
 </html>
