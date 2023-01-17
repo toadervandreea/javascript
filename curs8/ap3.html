@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">Lorem ipsum, dolor sit amet consectetur 07576885959 adipisicing elit.
+         Dolorem quibusdam eligendi, consequatur, corrupti iste beatae ipsam rem, 
+         et fugiat 0748 305774 nulla adipisci 58 suscipit dolorum sunt. Labore +40757587877 sed incidunt saepe repellendus 
+         eligendi.</p>
+         <p id="destinatie"></p>
+         <script>
+            let sursa = document.getElementById("sursa").innerHTML;
+            console.log(sursa);
+            let pattern= /[\+]?[0-9\s]{10,13}/g;
+            let result = sursa.match(pattern);
+            document.getElementById("destinatie").innerHTML = result;
+         </script>
+</body>
+</html>
