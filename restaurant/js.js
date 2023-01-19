@@ -72,6 +72,6 @@ function displayMenuButtons() {
             }else{
                 diplayMenuItems(menuCategory);
             }
-        })
-    })
+        });
+    });
 }
