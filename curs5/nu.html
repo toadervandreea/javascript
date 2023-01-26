@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
        
         .container{
             margin: 30px;
@@ -16,11 +16,11 @@
             max-width: 1200px;
         }
        
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post" enctype="multipart/form-data">
+    <!-- <div class="container"> -->
+        <!-- <form action="" method="post" enctype="multipart/form-data">
             <h1>Formular contact</h1>
             <label for="oras">Orasul</label>
                 <select name="oras" id="oras">
@@ -55,7 +55,46 @@
             <input type="checkbox" name="newsletter" id="newsletter">Va abonati la newsletter <br>
             <input type="submit" value="Trimite datele">
             
+        </form> -->
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Card</legend>
+                <label for="card">Numar card: </label>
+                <input type="number" name="card" id="card" placeholder="ewrwer"> <br>
+                <label for="data">Data expirare</label>
+                <input type="date" name="data" id="data"><br>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Livrare</legend>
+                <label for="prenume">Prenume</label>
+                <input type="text" name="prenume" id="prenume" placeholder="Introduceti prenumele"> <br>
+                <label for="nume">Nume</label>
+                <input type="text" name="nume" id="nume" placeholder="Introduceti numele"> <br>
+                <label for="companie">Companie</label>
+                <input type="text" name="companie" id="companie" placeholder="Introdceti numele companiei"> <br>
+                <label for="adresa">Adresa</label>
+                <input type="text" name="adresa" id="adresa" value="df"> <br>
+                <label for="oras">Oras</label>
+                <input type="text" name="oras" id="oras" value="dfg"> <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="erwerwe"> <br>
+                <label for="telefon">Telefon</label>
+                <input type="tel" name="tel" id="tel" value="fdfgdgfgdfg"> <br>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Adauga produse</legend>
+                <label for="masina">Masina</label>
+                <select name="masina" id="masina">
+                    <option value="volvo">Volvo</option>
+                    <option value="bmw">BMW</option>
+                    <option value="dacia">Dacia</option>
+                </select> <br>
+                <label for="mesaj">Mesaj</label>
+                <textarea name="mesaj" id="mesaj" cols="30" rows="10">Doresc</textarea>
+            </fieldset>
         </form>
     </div>
+    
 </body>
 </html>
